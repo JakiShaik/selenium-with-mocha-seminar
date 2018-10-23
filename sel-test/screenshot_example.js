@@ -19,8 +19,8 @@ describe('Prometheus tests', function() {
         expect(title).to.equal('Prometheus');
       });
       await driver.findElement(By.xpath('/html/body/main/form/input')).click();
-      await driver.findElement(By.xpath('//*[@id="username"]')).sendKeys('shaikj');
-      //await driver.findElement(selenium.By.id('username')).sendKeys('shaikj');
+      await driver.findElement(By.xpath('//*[@id="username"]')).sendKeys(<user_name>);
+      //await driver.findElement(selenium.By.id('username')).sendKeys('<username>');
       await driver.findElement(selenium.By.id('password')).sendKeys('*************',Key.RETURN); 
       await driver.wait(until.titleIs('Prometheus'));     
      });
