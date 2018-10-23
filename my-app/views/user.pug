@@ -1,0 +1,4 @@
+extends layout
+
+block content
+    button(id='button1',onclick="setTimeout(function(){button = document.createElement('button'); button.id = 'button2'; t = document.createTextNode('CLICK ME-2');button.appendChild(t);body.appendChild(button)},1000);") Click Me
